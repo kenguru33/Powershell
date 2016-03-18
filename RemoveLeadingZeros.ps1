@@ -1,4 +1,5 @@
-﻿$path = "c:\users\bernt\Testmappe\"
+﻿# change path as required. eg: c:\Myfiles\
+$path = "change me"
 # set to true for recursive traversing.
 $recursive = $false
 
