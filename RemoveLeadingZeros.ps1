@@ -1,5 +1,6 @@
 ﻿$path = "c:\users\bernt\Testmappe\"
-$recursive = $true
+# set to true for recursive traversing.
+$recursive = $false
 
 if ($recursive) {
     $fileList = Get-ChildItem $path -File -Recurse
@@ -9,8 +10,8 @@ if ($recursive) {
 
 foreach ($file in $fileList) 
 {
-    $newname = $file.Name.TrimStart("0")
-    Rename-Item $file.FullName $newname 
+    $newName = $file.Name.TrimStart("0")
+    Rename-Item $file.FullName $newName 
 }
 
 
